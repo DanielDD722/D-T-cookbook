@@ -184,21 +184,3 @@ footer {
     width: 700px;
   }
 }
-
-.button-top{
-  width: 80px;
-  margin: 0 auto;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  padding: 0.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  border-radius: .6rem;
-  background-color: white;
-}
-
-a{
-  text-decoration: none;
-}
