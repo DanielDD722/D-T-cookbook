@@ -81,6 +81,9 @@ h5 {
   margin: 10px;
   width: 33%;
   text-align: center;
+  font-size: 2em;
+  padding: 12px;
+  color: white;
 }
 
 .vegan {
@@ -90,6 +93,9 @@ h5 {
   margin: 10px;
   width: 33%;
   text-align: center;
+  font-size: 2em;
+  padding: 12px;
+  color: white;
 }
 
 .exotic {
@@ -100,7 +106,40 @@ h5 {
   margin-bottom: 20px;
   width: 33%;
   text-align: center;
+  font-size: 2em;
+  padding: 12px;
+  color: white;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.button-top{
+  width: 80px;
+  margin: 0 auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: .6rem;
+  background-color: black;
+
+}
+
+.button-top a{
+  color: black;
+}
+
 /* Footer */
 footer {
   padding-top: 1rem;
@@ -111,14 +150,23 @@ footer {
 /* Picture Area */
 .beefpic {
   background-color: rgb(110, 63, 63);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .veganpic {
   background-color: rgb(63, 109, 88);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .exoticpic {
   background-color: rgb(109, 102, 64);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .categories {
@@ -129,11 +177,6 @@ footer {
   border-bottom: solid 3px grey;
 }
 
-#pics {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 .beefpic img {
   width: 500px;
   padding: 60px 40px;
@@ -226,3 +269,18 @@ footer {
     width: 700px;
   }
 }
+
+.button-top{
+  width: 80px;
+  margin: 0 auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: .6rem;
+  background-color: white;
+}
+
