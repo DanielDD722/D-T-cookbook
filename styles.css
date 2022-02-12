@@ -150,14 +150,23 @@ footer {
 /* Picture Area */
 .beefpic {
   background-color: rgb(110, 63, 63);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .veganpic {
   background-color: rgb(63, 109, 88);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .exoticpic {
   background-color: rgb(109, 102, 64);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .categories {
@@ -168,11 +177,6 @@ footer {
   border-bottom: solid 3px grey;
 }
 
-#pics {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 .beefpic img {
   width: 500px;
   padding: 60px 40px;
