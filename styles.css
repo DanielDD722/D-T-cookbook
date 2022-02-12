@@ -81,6 +81,9 @@ h5 {
   margin: 10px;
   width: 33%;
   text-align: center;
+  font-size: 2em;
+  padding: 12px;
+  color: white;
 }
 
 .vegan {
@@ -90,6 +93,9 @@ h5 {
   margin: 10px;
   width: 33%;
   text-align: center;
+  font-size: 2em;
+  padding: 12px;
+  color: white;
 }
 
 .exotic {
@@ -100,7 +106,40 @@ h5 {
   margin-bottom: 20px;
   width: 33%;
   text-align: center;
+  font-size: 2em;
+  padding: 12px;
+  color: white;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.button-top{
+  width: 80px;
+  margin: 0 auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: .6rem;
+  background-color: black;
+
+}
+
+.button-top a{
+  color: black;
+}
+
 /* Footer */
 footer {
   padding-top: 1rem;
@@ -241,6 +280,3 @@ footer {
   background-color: white;
 }
 
-a{
-  text-decoration: none;
-}
