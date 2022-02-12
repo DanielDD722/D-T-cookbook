@@ -1,0 +1,142 @@
+
+html {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Header */
+header {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  border-bottom: solid 3px grey;
+}
+
+header img {
+  width: 100px;
+  margin-left: 17px;
+}
+/* Fonts */
+h1 {
+  font-size: 2em;
+  padding: 30px;
+  border: solid 3px grey;
+  border-radius: 18px;
+  color: white;
+  background-color: black;
+  margin-right: 17px;
+}
+
+h2 {
+  font-size: 4em;
+  padding-top: 13px;
+  color: white;
+}
+
+h5 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Sections */
+.frontpic {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Table */
+
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+  margin: 20px; 
+  display: flex;
+  justify-content: center;
+}
+
+.tg td {
+  border-color:rgb(252, 252, 252);
+  border-style:solid;
+  border-width:3px;
+  font-family:Arial, sans-serif;
+  font-size:1em;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+  color: white;
+  width: 30px;
+}
+
+.tg th {
+  border-color:rgb(248, 245, 245);
+  border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+  .frontpic img {
+    width: 250px;
+  }
+  h1 {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1200px) {
+  .frontpic img {
+    width: 350px;
+  }
+
+  h2 {
+    font-size: 3em;
+    text-align: center;
+    width: 450px;
+    padding-left: 30px;
+  }
+  .frontpic {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+  .frontpic img {
+    width: 450px;
+  }
+  h2 {
+    font-size: 4em;
+    width: 500px;
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (orientation: landscape) {
+  .frontpic img {
+    width: 600px;
+  }
+  h2 {
+    padding-left: 50px;
+    font-size: 5em;
+  }
+}
