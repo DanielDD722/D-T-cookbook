@@ -32,24 +32,27 @@ h2 {
   font-size: 4em;
   padding: 12px;
   color: white;
+  margin-bottom: 20px;
 }
 
 h3 {
-  margin-top: 50px;
   border-top: solid 3px grey;
-  border-bottom: solid 3px grey;
   font-size: 2em;
   padding: 40px;
+  padding-bottom: 20px;
   color: white;
   text-align: center;
   background-color: rgb(34, 34, 34);
+  width: 100%;
 }
 
-h4 {
+ h4 {
   font-size: 2em;
   padding: 12px;
   color: white;
 }
+
+
 
 h5 {
   font-size: 1em;
@@ -75,7 +78,7 @@ h5 {
   border-radius: 18px;
   background-color: rgb(107, 49, 49);
   border: 2px solid grey;
-  margin: 30px;
+  margin: 10px;
   width: 33%;
   text-align: center;
 }
@@ -84,7 +87,7 @@ h5 {
   border-radius: 18px;
   background-color: rgb(49, 107, 80);
   border: 2px solid grey;
-  margin: 30px;
+  margin: 10px;
   width: 33%;
   text-align: center;
 }
@@ -93,7 +96,8 @@ h5 {
   border-radius: 18px;
   background-color: rgb(107, 98, 49);
   border: 2px solid grey;
-  margin: 30px;
+  margin: 10px;
+  margin-bottom: 20px;
   width: 33%;
   text-align: center;
 }
@@ -108,8 +112,21 @@ footer {
 .beefpic {
   background-color: rgb(110, 63, 63);
 }
+
+.veganpic {
+  background-color: rgb(63, 109, 88);
+}
+
+.exoticpic {
+  background-color: rgb(109, 102, 64);
+}
+
 .categories {
-  background-color: rgb(110, 63, 63);
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 3px grey;
 }
 
 #pics {
@@ -119,8 +136,19 @@ footer {
 }
 .beefpic img {
   width: 500px;
-  padding: 40px;
+  padding: 60px 40px;
 }
+
+.veganpic img {
+  width: 500px;
+  padding: 60px 40px;
+}
+
+.exoticpic img {
+  width: 500px;
+  padding: 60px 40px;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 400px) and (orientation: portrait) {
@@ -151,7 +179,15 @@ footer {
   }
   .beefpic img {
     width: 150px;
-    padding: 10px;
+    padding: 20px 10px;
+  }
+  .veganpic img {
+    width: 150px;
+    padding: 20px 10px;
+  }
+  .exoticpic img {
+    width: 150px;
+    padding: 20px 10px;
   }
 }
 
@@ -181,6 +217,12 @@ footer {
 
 @media only screen and (min-width: 1400px) and (orientation: landscape) {
   .beefpic img {
+    width: 700px;
+  }
+  .veganpic img {
+    width: 700px;
+  }
+  .exoticpic img {
     width: 700px;
   }
 }
