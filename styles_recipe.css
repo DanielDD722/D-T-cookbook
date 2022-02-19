@@ -1,8 +1,20 @@
-
+/* Universal */
 html {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+  font-size: 2em;
+  color: white;
+}
+
+h2 {
+  font-size: 4em;
+  padding-top: 13px;
+  color: white;
+}
+
 /* Header */
 header {
   height: 150px;
@@ -17,21 +29,45 @@ header img {
   width: 100px;
   margin-left: 17px;
 }
-/* Fonts */
-h1 {
-  font-size: 2em;
+
+.header-home {
   padding: 30px;
   border: solid 3px grey;
   border-radius: 18px;
-  color: white;
   background-color: black;
   margin-right: 17px;
 }
 
-h2 {
-  font-size: 4em;
-  padding-top: 13px;
+/* Fonts */
+
+
+h3,
+h4 {
+  font-family:Arial, sans-serif;
   color: white;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  margin: 10px;
+}
+
+li {
+  font-size: 1em;
+  color: white;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+ol {
+  margin: 20px;
 }
 
 h5 {
@@ -50,17 +86,36 @@ h5 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+/* Preparation time */
+section {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  margin-right: 30px;
+  align-items: center;
+}
+
+img {
+  width: 20px;
+  margin: 10px;
+}
+
+.ingredients-width {
+  max-width: 75%;
+  margin: 0 auto;
+}
 
 /* Table */
 
 .tg  {
   border-collapse:collapse;
   border-spacing:0;
-  margin: 20px; 
   display: flex;
+  margin-bottom: 20px;
   justify-content: center;
-
 }
+
+
 
 .tg td {
   border-color:rgb(252, 252, 252);
@@ -69,26 +124,25 @@ h5 {
   font-family:Arial, sans-serif;
   font-size:1em;
   overflow:hidden;
-  padding:10px 5px;
   word-break:normal;
   color: white;
-  width: 30px;
+  padding: 10px 25px; 
+  text-align: left;
+  background-color: rgb(34, 34, 34);
 }
 
-.tg th {
-  border-color:rgb(248, 245, 245);
-  border-style:solid;
-  border-width:1px;
-  font-family:Arial, sans-serif;
-  font-size:14px;
-  font-weight:normal;
-  overflow:hidden;
-  padding:10px 5px;
-  word-break:normal;
-  width: 100px;
+thead > tr:nth-child(1) > td:nth-child(1), thead > tr:nth-child(1) > td:nth-child(2) {
+  background-color: rgb(110, 63, 63);
 }
 
-
+/* Description */
+.recipe {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
 /* Media Queries */
 
@@ -104,6 +158,11 @@ h5 {
     font-size: 2em;
     text-align: center;
   }
+  .tg td {
+    padding:10px 25px 10px 10px;}
+  .recipe {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 1200px) {
@@ -113,13 +172,22 @@ h5 {
 
   h2 {
     font-size: 3em;
-    text-align: center;
     width: 450px;
-    padding-left: 30px;
+    text-align: center;
   }
   .frontpic {
     flex-direction: column;
   }
+
+  .tg td {
+    padding: 10px 40px 10px 10px;}
+
+  .tg {
+    align-items: center;}
+   
+    .recipe {
+      width: 450px;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (orientation: landscape) {
@@ -131,6 +199,14 @@ h5 {
     width: 500px;
     padding-left: 40px;
   }
+  .tg td {
+    padding:20px 60px;
+    font-size: 1.8em
+  }
+  .recipe {
+    width: 850px;
+    font-size: 1.8em;
+  }
 }
 
 @media only screen and (min-width: 1400px) and (orientation: landscape) {
@@ -141,4 +217,25 @@ h5 {
     padding-left: 50px;
     font-size: 5em;
   }
+  .tg td {
+    padding:20px 80px;
+    font-size: 2.2em}
+
+    .recipe {
+      width: 1000px;
+      font-size: 2.2em
+    }
+  }
+
+
+/* Footer */
+
+footer {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(34, 34, 34);
+  border-top: solid 3px grey;
 }
