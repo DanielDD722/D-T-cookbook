@@ -102,7 +102,7 @@ img {
 }
 
 .ingredients-width {
-  max-width: 75%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -135,7 +135,6 @@ img {
 thead > tr:nth-child(1) > td:nth-child(1), thead > tr:nth-child(1) > td:nth-child(2) {
   background-color: rgb(110, 63, 63);
 }
-
 
 /* Description */
 .recipe {
