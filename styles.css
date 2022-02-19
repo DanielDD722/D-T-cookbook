@@ -275,12 +275,13 @@ footer {
   margin: 0 auto;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  padding: 0.6rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   border-radius: .6rem;
-  background-color: white;
+  border: 2px solid white;
+  background-color: black;
 }
 
