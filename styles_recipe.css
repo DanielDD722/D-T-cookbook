@@ -88,7 +88,12 @@ h5 {
   width: 100px;
 }
 
-
+footer {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  background-color: rgb(34, 34, 34);
+  border-top: 2px solid grey;
+}
 
 /* Media Queries */
 
