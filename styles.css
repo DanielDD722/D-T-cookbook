@@ -146,6 +146,8 @@ footer {
   padding-bottom: 3rem;
   background-color: rgb(34, 34, 34);
   border-top: 2px solid grey;
+  change
+
 }
 /* Picture Area */
 .beefpic {
@@ -275,12 +277,13 @@ footer {
   margin: 0 auto;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  padding: 0.6rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   border-radius: .6rem;
-  background-color: white;
+  border: 2px solid white;
+  background-color: black;
 }
 
